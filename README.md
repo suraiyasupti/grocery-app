@@ -13,8 +13,6 @@ at cloudinary for the same. Rest APIs are being used to fetch the products for t
 ![Cart Preview](https://res.cloudinary.com/suraiya/image/upload/v1634202920/Screenshot_256_i755av.png)
 
 
-[https://sivadass.github.io/react-shopping-cart/](https://sivadass.github.io/react-shopping-cart/)
-
 ## Setup
 
 Goto the project folder and install required dependencies:
