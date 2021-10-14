@@ -9,8 +9,8 @@ at cloudinary for the same. Rest APIs are being used to fetch the products for t
 ## Sample Pics
 
 ![Main image](https://res.cloudinary.com/suraiya/image/upload/v1634202920/Screenshot_253_un1xar.png)
-!(https://res.cloudinary.com/suraiya/image/upload/v1634202920/Screenshot_255_xo7ezd.png)
-!(https://res.cloudinary.com/suraiya/image/upload/v1634202920/Screenshot_256_i755av.png)
+![Products Added to Card](https://res.cloudinary.com/suraiya/image/upload/v1634202920/Screenshot_255_xo7ezd.png)
+![Cart Preview](https://res.cloudinary.com/suraiya/image/upload/v1634202920/Screenshot_256_i755av.png)
 
 
 [https://sivadass.github.io/react-shopping-cart/](https://sivadass.github.io/react-shopping-cart/)
