@@ -222,7 +222,7 @@ const calculateSubTotal = () =>
   {
       total += Number(items[cnt].innerHTML);
   }
-  return total/2;
+  return total;
 }
 
 const Checkout = () => {
