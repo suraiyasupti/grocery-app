@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
 import classNames from "classnames";
 import {
@@ -214,10 +214,22 @@ const PaymentStep = () => {
   );
 };
 
+const calculateSubTotal = () =>
+{
+  var items = document.getElementsByClassName("amount");
+  var total=0;
+  for(var cnt=0;cnt<items.length;cnt++)
+  {
+      total += Number(items[cnt].innerHTML);
+  }
+  return total/2;
+}
+
 const Checkout = () => {
   const { items = [] } = useContext(CartStateContext);
   const { isLoggedIn } = useContext(AuthStateContext);
   const { step, shippingAddress } = useContext(CheckoutStateContext);
+  const [subTotal, setSubTotal] = useState(0);
   const checkoutDispatch = useContext(CheckoutDispatchContext);
   const totalItems = items.length;
 
@@ -295,19 +307,19 @@ const Checkout = () => {
           <ul className="total-breakup">
             <li>
               <p>Subtotal</p>
-              <p>5000</p>
+              <p>{calculateSubTotal()}</p>
             </li>
             <li>
               <p>Tax</p>
-              <p>5000</p>
+              <p>{calculateSubTotal() * 0.02}</p>
             </li>
             <li>
               <p>Shipping</p>
-              <p>5000</p>
+              <p>5</p>
             </li>
             <li>
               <h2>Total</h2>
-              <h2>5000</h2>
+              <h2>{calculateSubTotal() + 5 + (calculateSubTotal() * 0.02)}</h2>
             </li>
           </ul>
         </div>
